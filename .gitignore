@@ -128,5 +128,27 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Data folder
+data
+models
+past
+
 # Data file
-*/data/*
+*.zip
+*.csv
+*.png
+*.jpeg
+*.pdf
+*.json
+*.txt
+*.jpg
+
+
+.DS_Store
+.jupyter/
+.local/
+.ipynb_checkpoints
+.cache
+.ipython
+
+

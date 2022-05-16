@@ -1,15 +1,15 @@
 version: "3"
 services:
-  test:
+  stat_model:
     image: datascience-notebook
-    container_name: test
+    container_name: stat_model
     user: root
     privileged: true
     build:
       context: .
       dockerfile: ./Dockerfile
     ports:
-      - "999:8888"
+      - "8888:8888"
     volumes:
       - ../:/home/jovyan/
     restart: unless-stopped

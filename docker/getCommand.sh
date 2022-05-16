@@ -9,10 +9,7 @@ apt-get update && apt-get install -y \
     git \
     python3-dev \
     python3-wheel \
-    python3-setuptools \
-    libmecab-dev \
-    mecab \
-    mecab-ipadic-utf8
+    python3-setuptools 
 
 
 HOME="/home/ubuntu"
@@ -46,7 +43,5 @@ jupyter nbextension enable toc2/main
 jupyter nbextension enable varInspector/main
 jupyter nbextension enable freeze/main
 
-git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd.git
-mecab-ipadic-neologd/bin/install-mecab-ipadic-neologd -y
 
 echo "end $0"
